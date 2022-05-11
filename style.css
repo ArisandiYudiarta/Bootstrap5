@@ -7,6 +7,48 @@
 /* Hero */
 
 .hero {
-  padding: 2rem 1rem;
-  background-color: #abdcfdef;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+  background-color: #abdcfd;
+}
+
+.svg1-wrapper {
+  width: auto;
+}
+
+#projects {
+  background-color: #abdcfd;
+}
+
+.spacer {
+  aspect-ratio: 1920/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave1 {
+  background-image: url(svg/wave1.svg);
+}
+
+.wave2 {
+  background-image: url(svg/wave2.svg);
+}
+
+.wave3 {
+  background-image: url(svg/wave3.svg);
+}
+
+.wave4 {
+  background-image: url(svg/wave4.svg);
+}
+
+#footer {
+  background-color: #5093f8;
+  padding-bottom: 40px;
+}
+
+section {
+  padding-top: 10rem;
 }

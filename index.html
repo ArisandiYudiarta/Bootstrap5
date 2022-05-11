@@ -7,32 +7,35 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
     <!-- MyCSS -->
     <link rel="stylesheet" href="style.css" />
 
     <title>Portofolio | Arisandi Yudiarta</title>
   </head>
-  <body>
+  <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"><i class="bi bi-file-earmark-person"></i> Portofolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"><i class="bi bi-house-door"></i> Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">My Skills</a>
+              <a class="nav-link" href="#about"><i class="bi bi-person-workspace"></i> About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects"><i class="bi bi-archive"></i> Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Me</a>
+              <a class="nav-link" href="#contact"><i class="bi bi-envelope"></i> Contact Me</a>
             </li>
           </ul>
         </div>
@@ -47,6 +50,106 @@
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, totam.</p>
     </section>
     <!-- Hero End -->
+    <div class="spacer wave1"></div>
+    <!-- About  -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id placeat illum odio deserunt, molestias, totam quos sunt dolorum rerum voluptate quisquam tenetur fuga recusandae in.</p>
+          </div>
+          <div class="col-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae suscipit eaque quos quae tempora ipsa dolorem ex distinctio, sequi illo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <div class="spacer wave2"></div>
+
+    <!-- Projects Start -->
+    <section id="projects">
+      <div class="container justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/lantern.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/lively sakura.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/full moon.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects End -->
+
+    <div class="spacer wave3"></div>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <div class="spacer wave4"></div>
+
+    <!-- Footer -->
+    <section id="footer" class="text-white">
+      <div class="container">
+        <div class="row text-center">
+          <h6>Made with passion by Arisandi Yudiarta</h6>
+        </div>
+      </div>
+    </section>
+    <!-- Footer End -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
